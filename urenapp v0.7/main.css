@@ -1,0 +1,57 @@
+/* 
+* CSS voor de urenstaat, overzicht, instellingen, gebruiker en admin pagina's.
+* Opgesteld door Alexander Benerink & Leona Risiglione, Aventus.
+*
+*/
+
+body {
+    background-image: url("bg_login_register.jpg");
+    height: 100%;
+    background-size: cover;
+    font-family: segoe ui;
+}
+
+.main_container_urenstaat {
+    background-color: rgba(144, 238, 144, 0.281);
+    width: 1400px;
+    height: 100%;
+    border-radius: 5%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.uren_grid_1 {
+    background-color: rgba(131, 228, 128, 0.452);
+    width: 1250px;
+    height: 150px;
+    border-radius: 2%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.uren_grid_1 > span {
+    padding: 4px 2px;
+    border-left: 0 px solid black;
+    border-bottom: 0px solid black;
+}
+
+
+.uren_grid_2 {
+    background-color: rgba(131, 228, 128, 0.452);
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 0px solid black;
+    border-right: 0px solid black;
+    width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.uren_grid_2 > span {
+    padding: 4px 2px;
+    border-left: 0px solid black;
+    border-bottom: 0px solid black;
+}

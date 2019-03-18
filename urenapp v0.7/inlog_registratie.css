@@ -1,0 +1,80 @@
+/* 
+* CSS voor de inlog en registratie pagina's.
+* Opgesteld door Alexander Benerink & Leona Risiglione, Aventus.
+*
+*/
+
+body {
+    background-image: url("bg_login_register.jpg");
+    height: 100%;
+    background-size: cover;
+    font-family: segoe ui;
+}
+
+/*--------------------Login container--------------------*/
+
+.login_container {
+    background-color: rgba(144, 238, 144, 0.473);
+    width: 450px;
+    height: 400px;
+    border-radius: 10%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+
+.login_container input, button {
+    border-style: hidden;
+    margin-bottom: 20px;
+    line-height: 40px;
+    padding: 0px 5%;
+    position: relative;
+    top: 50px;
+    font-family: segoe ui, FontAwesome;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.login_container p {
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    font-family: segoe ui, FontAwesome;
+}
+
+/*--------------------Registratie container--------------------*/
+
+.register_container {
+    background-color: rgba(144, 238, 144, 0.473);
+    width: 450px;
+    height: 400px;
+    border-radius: 10%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+
+.register_container input, button {
+    border-style: hidden;
+    margin-bottom: 20px;
+    line-height: 40px;
+    padding: 0px 5%;
+    position: relative;
+    top: 50px;
+    font-family: segoe ui, FontAwesome;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.register_container p {
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    font-family: segoe ui, FontAwesome;
+}
