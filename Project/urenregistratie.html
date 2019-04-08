@@ -1,0 +1,334 @@
+<!doctype <!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Urenregistratie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- JQuery Datepicker -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.datepicker-nl.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+
+      <section>
+        <h1>Urenregistratie</h1>
+        <input type="text" class="form-control form-control-sm mb-2" id="datepicker">
+        <p id="week-number">Week: </p>
+      </section>
+      <hr>
+      <!-- Dag 1 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-1">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-1" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 2 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-2">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-2" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 3 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-3">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-3" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 4 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-4">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-4" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 5 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-5">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-5" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 6 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-6">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-6" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+      <!-- Dag 7 -->
+      <div class="row">
+        <div class="col-md project">
+          <p class="mb-0" id="date-day-7">Datum</p>
+        </div>
+        <div class="col-md start">
+          <p class="mb-0">Begin</p>
+        </div>
+        <div class="col-md end">
+          <p class="mb-0">Eind</p>
+        </div>
+        <div class="col-md pause">
+          <p class="mb-0">Pauze</p>
+        </div>
+        <div class="col-md safe">
+          <p class="mb-0">Opslaan</p>
+        </div>
+      </div>
+      <div class="row mb-4" style="background-color: rgb(236, 236, 236)">
+        <div class="col-md">
+          <form class="mb-0" name="form-day-7" method="post">
+            <select>
+              <option value="1">Project 1</option>
+              <option value="2">Project 2</option>
+              <option value="3">Project 3</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="start-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Begin">
+          </div>
+          <div class="col-md">
+            <input type="text" class="time" name="end-1" pattern="([01]?[0-9]{1}|2[0-3]{1}):[0-5]{1}[0-9]{1}" placeholder="Eind">
+          </div>
+          <div class="col-md">
+            <input type="number" name="pause-1" min="1" placeholder="Pauze">
+          </div>
+          <div class="col-md">
+            <input type="submit" name="safe-1" value="Opslaan">
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+  <script src="js/time-format.js"></script>
+  <script src="js/datepicker.js"></script>
+</body>
+
+</html>
