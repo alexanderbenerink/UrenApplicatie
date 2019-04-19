@@ -1,0 +1,9 @@
+* Timepicker
+	- Tijden worden worden opgeslagen als hh-mm-ss. Seconds moeten weg gelaten worden.
+
+* Database
+	- Record namen naar kleine letters
+	- Momenteel bestaan er verschillende functies voor elke database aanvraag.
+	  Dit is tijdelijk en moet later aangepast worden naar wat beters.
+	- Betere validatie
+	- Hoe slaan we datums op? Als datum object of als String? Database object is 	  namelijk en US notatie (YYYY-MM-DD) terwijl wij DD-MM-YYYY gebruiken.
