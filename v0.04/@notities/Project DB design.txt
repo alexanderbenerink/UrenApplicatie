@@ -1,0 +1,40 @@
+[project-dummy-db]
+
+Notes:
+1) Beheerders en gebruikers in dezelfde tabel of gescheiden houden en relaties aangegeven?
+2) Voornaam + achternaam samen of gescheiden?
+3) Betere tabel namen voor gewerkte_datums en project_koppeling?
+
+gebruikers
+* id
+* naam
+* wachtwoord
+* beheerder
+* email?
+
+projecten
+* id
+* project
+* gebruiker
+* aanmaak_datum
+
+project_koppeling
+* id
+* persoon (relatie met tabel gebruikers)
+* project (relatie met tabel projecten)
+
+gewerkte_datums
+* id
+* datum
+
+gewerkte_uren
+* id
+* datum (relatie met tabel gewerkte_datums)
+* persoon (geen relatie of relatie met tabel gebruikers)?
+* project
+* start
+* eind
+* pauze
+* status
+* aanvraag_datum
+* validate_datum
