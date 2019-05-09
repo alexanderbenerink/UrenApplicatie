@@ -1,0 +1,2 @@
+* Database
+	- foutje tabelnaam in gewerkte_uren. validate_datum -> validatie_datum
