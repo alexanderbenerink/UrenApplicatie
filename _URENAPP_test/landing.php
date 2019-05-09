@@ -28,8 +28,8 @@
   	<!-- Side navigation -->
   	<div id="mySidenav" class="sidenav">
   	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  	  <a href="login.php">Log in</a>
-  	  <a href="registreer.php">Registreer</a>
+  	  <a href="#">Log in</a>
+  	  <a href="#">Registreer</a>
   	</div>
   	<!-- Header navigation -->
   	<div id="main">
