@@ -1,0 +1,2 @@
+Urenregistratie doet per aangevraagde dag een aanvraag op het database.
+Moet dit alleen gebeuren voor de dagen die al geweest zijn + huidige dag?
